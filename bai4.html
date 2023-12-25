@@ -5,36 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
 <body>
-    <table border="1">
-        <caption>This is table caption</caption>
-        <thead>
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-                <th>Column 3</th>
-                <th>Column 4</th>
-                <th>Column 5</th>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td rowspan="3">Data 2</td>
-                <td>Data 3</td>
-                <td>Data 4</td>
-                <td>Data 5</td>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 3</td>
-                <td colspan="2">Data 4 and 5</td>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 3</td>
-                <td>Data 4</td>
-                <td>Data 5</td>
-            </tr>
-        </thead>
-    </table>
+    <form action="" method="get">
+        <h3>Thêm nhân viên mới</h3>
+        <div>
+            <label for="username">Họ và tên</label>
+            <input id="username" type="text">
+        </div>
+        <br />
+        <div>
+            <label for="dateofbirth">Ngày sinh</label>
+            <input id="dateofbirth" type="date">
+        </div>
+        <br />
+        <div>
+            <label for="">Giới tính</label>
+            <input name="gender" type="radio" />Nam 
+            <input name="gender" type="radio" />Nữ
+            <input name="gender" type="radio" />khác
+        </div>
+        <br />
+        <div>
+            <label for="username">Email:</label>
+            <input id="username" type="email">
+        </div>
+        <div>
+            <label for="pass">Mật khẩu: </label>
+            <input id="pass" type="mật khẩu">
+        </div>
+        <div>
+            <label for="">Giới thiệu bản thân</label>
+            <textarea name="" id="" cols="30" rows="10">Xin đẹp</textarea>
+        </div>
+        <div>
+            <label for="">Sở thích</label>
+            <input type="checkbox">Code
+            <input type="checkbox">Chơi game
+            <input type="checkbox">Bơi lội
+            <input type="checkbox">Đá bóng
+        </div>
+        <div>
+            <label for="">Thành phố</label>
+            <select name="" id="">
+                <option value="">Hà Nội</option>
+                <option value="">Hà Nam</option>
+                <option value="">Hải Phòng</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Hình ảnh</label>
+            <input type="file">
+        </div>
+        <div>
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Làm mới">
+        </div>
+    </form>
 </body>
 </html>
